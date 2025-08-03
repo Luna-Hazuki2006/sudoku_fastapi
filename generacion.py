@@ -146,6 +146,6 @@ def generar_matriz():
     pprint(real)
     visual = reconstruir(real)
     pprint(real)
-    final = vaciar(visual, 70)
+    final = vaciar(visual, 85)
     pprint(final)
     return final
