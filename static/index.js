@@ -10,7 +10,11 @@ for (const cada of casillas) {
 }
 
 document.onkeyup = (evento) => {
-    casilla.innerText = evento.key
+    let info = evento.key
+    let datos = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+    if (datos.includes(info)) {
+        casilla.innerText = info
+    }
 }
 
 console.log('holaaaaaaa');
