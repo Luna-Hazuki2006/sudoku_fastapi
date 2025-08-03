@@ -2,6 +2,22 @@ body {
     background-color: pink;
 }
 
+h1, article, div {
+    text-align: center;
+}
+
+div {
+    margin-bottom: 1%;
+}
+
+article {
+    margin-top: 3%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 table, td {
     text-align: center;
     border: 1px solid black;
