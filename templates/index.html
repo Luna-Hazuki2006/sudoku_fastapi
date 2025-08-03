@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es-VE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+    <script src="{{ url_for('static', path='index.js') }}" defer></script>
+    <title>Sudoku</title>
+</head>
+<body>
+    <table>
+        {% for lista in matriz %}
+        <tr>
+            {% for dato in lista %}
+            {% if dato == 0 %}
+            <td class="cambiable"></td>
+            {% else %}
+            <td>{{ dato }}</td>
+            {% endif %}
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
