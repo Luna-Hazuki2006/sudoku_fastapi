@@ -28,7 +28,7 @@ def agregar(busqueda : list[list[dict]], cuadro : int, lista : list[int]):
                 for esto in real: 
                     caso.append(esto[i])
                 nuevo.append(caso)
-            pprint(nuevo)
+            # pprint(nuevo)
             inicio = nuevo.pop()
             nuevo.insert(0, inicio)
             pedazos = []
@@ -37,7 +37,7 @@ def agregar(busqueda : list[list[dict]], cuadro : int, lista : list[int]):
                 for esto in nuevo: 
                     caso.append(esto[i])
                 pedazos.append(caso)
-            pprint(pedazos)
+            # pprint(pedazos)
             lazos = []
             for esto in pedazos: lazos.extend(esto)
             for origen, real in zip(busqueda[cuadro], lazos): 
@@ -146,6 +146,6 @@ def generar_matriz():
     pprint(real)
     visual = reconstruir(real)
     pprint(real)
-    final = vaciar(visual, 85)
+    final = vaciar(visual, 105)
     pprint(final)
     return final
